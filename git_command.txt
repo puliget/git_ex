@@ -1,0 +1,29 @@
+git_command:
+git init (for initial directory as working directory)
+git add (adding working directory file into staging area)
+git commit (sending the files in staging area to local directory)
+git remote add <name> <url>(adding the remote directory)
+git push -u <name> <branch> (pushing files from local directory to remote directory)
+git branch (to checking the  which branch we are locate current)
+git status(check the modify of file and  adding working directory file into staging area or not)
+git pull(getting the branchs from remote directory)
+git checkout(move between branchs ,create new branchs and helpful get remote branch from remote directory to local directory)
+git fetch
+
+issuse current branch on local directory is not pushing into remote directory existing branch 
+Git can't make your change to a remote repository without losing commits. When this happens, your push is refused.
+
+reason:If another person has pushed to the same branch as you, Git won't be able to push your changes:
+    ans:You can fix this by fetching and merging the changes made on the remote branch with the changes that you have made locally or force push 
+git diff --staged
+View Staged Changes: To see what changes are currently staged, use
+
+git show <ref_no/branch_name>(display commit message,files_names, files changes and files_content)
+git show --name-only <ref_no/-branch_name> (it will display only file name)
+git show <ref_no/branch_name>:file_name[optional](showing content of files and file)
+git restore -s <branch_name/frist character commit_name>: -- file_name(it will restore that file)
+git restore -s <branch_name/commit_name> <path to store>(to restore all file)
+git remote -v (it show the remote name, path link to remote_name and puropse it )
+git reflog <branch_name[optional]> (it will store history in a local directory using git untill 90 days,after it history is remove automatic)
+git reset HEAD~1 (This command is perfect for quickly retracting a recent commit while still saving all changes outside the staging area.)
+git reset (remove the file from staging)
