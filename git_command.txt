@@ -27,3 +27,5 @@ git remote -v (it show the remote name, path link to remote_name and puropse it 
 git reflog <branch_name[optional]> (it will store history in a local directory using git untill 90 days,after it history is remove automatic)
 git reset HEAD~1 (This command is perfect for quickly retracting a recent commit while still saving all changes outside the staging area.)
 git reset (remove the file from staging)
+ignore log files mean that not adding log file in remote server , create gitignore file and add log files name or name pattern where in  gitignore file 
+then add ,commit  and push .. you can log file is not in remote server
